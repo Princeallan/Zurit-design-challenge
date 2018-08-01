@@ -17,8 +17,8 @@
             <ul class="">
                 <li>logo</li>
                 <li style="float: right;"><a href="#" id="signin">Sign in</a>
-                or
-                <a href="#" id="join">Join</a></li>
+                    or
+                    <a href="#" id="join">Join</a></li>
                 <span id="pipe">|<span class="postfix"><i class="fi-magnifying-glass"></i></span></span>
             </ul>
         </div>
@@ -56,12 +56,41 @@
 </section>
 
 <section class="new-collection">
+    <div class="grid-x">
 
+        <div class="medium-5">
+            <div class="card collection-1" style="background-image: url('./images/Bitmap.png');height: 500px;
+            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+
+            </div>
+        </div>
+        <div class="medium-7">
+            <div class="grid-x">
+                <div class="card " style="background-image: url('./images/rice.png');height: 240px;
+            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+
+                </div>
+            </div>
+            <div class="grid-x">
+                <div class="medium-7">
+                    <div class="card collection-1" style="background-image: url('./images/tiles.png');height: 240px;
+            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+
+                    </div>
+                </div>
+                <div class="medium-5">
+                    <div class="card collection-1" style="background-image: url('./images/door.png');height: 240px;
+            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </section>
 
 <section class="new-products">
-
 
 
 </section>
@@ -70,25 +99,21 @@
 <section class="services">
 
 
-
 </section>
 
 
 <section class="more-products">
 
 
-
 </section>
 
 
 <section class="our-partner">
 
 
-
 </section>
 
 <section class="our-partner">
-
 
 
 </section>
@@ -114,7 +139,7 @@
     $(document).ready(function () {
         $('.home-carousel').slick({
             autoplay: true,
-            arrows:true,
+            arrows: true,
             autoplaySpeed: 2000,
         });
     });
