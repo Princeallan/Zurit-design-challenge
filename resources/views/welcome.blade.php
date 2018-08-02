@@ -33,13 +33,13 @@
         <div class="top-bar" id="responsive-menu">
             <div class="top-bar-left">
                 <ul class="dropdown menu" data-dropdown-menu>
-                    <li><a href="#0">One</a></li>
-                    <li><a href="#0">Two</a></li>
-                    <li><a href="#0">Three</a></li>
-                    <li><a href="#0">four</a></li>
-                    <li><a href="#0">five</a></li>
-                    <li><a href="#0">six</a></li>
-                    <li><a href="#0">seven</a></li>
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                    <li><a href="#">four</a></li>
+                    <li><a href="#">five</a></li>
+                    <li><a href="#">six</a></li>
+                    <li><a href="#">seven</a></li>
                 </ul>
             </div>
 
@@ -92,31 +92,94 @@
 
 <section class="new-products">
 
+    <div class="grid-x row">
+        <div class="medium-3">
+            <div class="card collection-1" style="background-image: url('./images/Bitmap1.png');height: 250px;
+            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+
+            </div>
+        </div>
+        <div class="medium-3">
+            <div class="card collection-1" style="background-image: url('./images/Bitmap2.png');height: 250px;
+            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+
+            </div>
+        </div>
+        <div class="medium-3">
+            <div class="card collection-1" style="background-image: url('./images/Bitmap3.png');height: 250px;
+            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+
+            </div>
+            <div>ffddsdgfffrerr</div>
+        </div>
+        <div class="medium-3">
+            <div class="card collection-1" style="background-image: url('./images/Bitmap4.png');height: 250px;
+            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+
+            </div>
+        </div>
+    </div>
+    <div class="grid-x row">
+        <div class="medium-3">
+            <div class="card collection-1" style="background-image: url('./images/Bitmap5.png');height: 250px;
+            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+
+            </div>
+        </div>
+        <div class="medium-3">
+            <div class="card collection-1" style="background-image: url('./images/Bitmap6.png');height: 250px;
+            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+
+            </div>
+        </div>
+        <div class="medium-3">
+            <div class="card collection-1" style="background-image: url('./images/Bitmap7.png');height: 250px;
+            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+
+            </div>
+        </div>
+        <div class="medium-3">
+            <div class="card collection-1" style="background-image: url('./images/Bitmap8.png');height: 250px;
+            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+
+            </div>
+        </div>
+    </div>
+<div>
+    <button class="button">View All Products</button>
+</div>
 
 </section>
-
 
 <section class="services">
+<div class="gird-x row">
+    <div class="medium-8">
+        <div class="card collection-1" style="background-image: url('./images/Bitmap8.png');height: 450px;
+            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
 
+        </div>
+    </div>
+    <div class="medium-4">
+        <div class="card collection-1" style="background-image: url('./images/Bitmap8.png');height: 250px;
+            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+<section class="our-partners">
+<div class="grid-x">
+    <div class="card collection-1" style="background-image: url('./images/partners.jpg');height: 250px;
+            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+
+    </div>
+</div>
 
 </section>
 
-
-<section class="more-products">
-
-
-</section>
-
-
-<section class="our-partner">
-
-
-</section>
-
-<section class="our-partner">
-
-
-</section>
 
 <section class="news-letter">
 
