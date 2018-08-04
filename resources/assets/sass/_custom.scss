@@ -1,0 +1,14 @@
+body {
+  .bitmap {
+    margin: 10px;
+    height: 500px;
+    background-image: url('/images/Bitmap.png');
+  }
+  .collection-1 {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+}

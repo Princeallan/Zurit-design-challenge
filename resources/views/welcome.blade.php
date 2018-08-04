@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title> Zurit </title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="{{asset('css/slick/slick.css')}}">
     <link rel="stylesheet" href="{{asset('css/slick/slick-theme.css')}}">
@@ -13,13 +13,15 @@
 
 <section class="row header">
     <div class="row">
-        <div class="top-bar-right">
+        <div class="">
             <ul class="">
                 <li>logo</li>
-                <li style="float: right;"><a href="#" id="signin">Sign in</a>
+                <li style="float: right;">
+                    <a href="#" id="signin">Sign in</a>
                     or
-                    <a href="#" id="join">Join</a></li>
-                <span id="pipe">|<span class="postfix"><i class="fi-magnifying-glass"></i></span></span>
+                    <a href="#" id="join">Join | </a>
+                    <span class="postfix"><i class="fi-magnifying-glass"></i></span></li>
+
             </ul>
         </div>
     </div>
@@ -58,29 +60,25 @@
 <section class="new-collection">
     <div class="grid-x">
 
-        <div class="medium-5">
-            <div class="card collection-1" style="background-image: url('./images/Bitmap.png');height: 500px;
-            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+        <div class="medium-offset-1 small-12 medium-4">
+            <div class="card collection-1 bitmap">
 
             </div>
         </div>
-        <div class="medium-7">
+        <div class="small-12 medium-6">
             <div class="grid-x">
-                <div class="card " style="background-image: url('./images/rice.png');height: 240px;
-            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+                <div class="card collection-1" style="background-image: url('./images/rice.png');height: 240px;margin: 10px;">
 
                 </div>
             </div>
             <div class="grid-x">
-                <div class="medium-7">
-                    <div class="card collection-1" style="background-image: url('./images/tiles.png');height: 240px;
-            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+                <div class="small-6 medium-7">
+                    <div class="card collection-1" style="background-image: url('./images/tiles.png');height: 240px;margin: 10px;">
 
                     </div>
                 </div>
-                <div class="medium-5">
-                    <div class="card collection-1" style="background-image: url('./images/door.png');height: 240px;
-            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+                <div class="small-6 medium-5">
+                    <div class="card collection-1" style="background-image: url('./images/door.png');height: 240px;margin: 10px;">
 
                     </div>
                 </div>
@@ -92,27 +90,24 @@
 
 <section class="new-products">
 
-    <div class="grid-x row">
-        <div class="medium-3">
-            <div class="card collection-1" style="background-image: url('./images/Bitmap1.png');height: 250px;
-            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+    <div class="grid-x grid-padding-y">
+        <div class="cell small-6 medium-3">
+            <div class="card collection-1" style="background-image: url('./images/Bitmap1.png');height: 250px;margin: 10px;">
 
             </div>
         </div>
-        <div class="medium-3">
-            <div class="card collection-1" style="background-image: url('./images/Bitmap2.png');height: 250px;
-            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+        <div class="cell small-6 medium-3">
+            <div class="card collection-1" style="background-image: url('./images/Bitmap2.png');height: 250px;margin: 10px;">
 
             </div>
         </div>
-        <div class="medium-3">
-            <div class="card collection-1" style="background-image: url('./images/Bitmap3.png');height: 250px;
-            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+        <div class="cell small-6 medium-3">
+            <div class="card collection-1" style="background-image: url('./images/Bitmap3.png');height: 250px;margin: 10px;">
 
             </div>
             <div>ffddsdgfffrerr</div>
         </div>
-        <div class="medium-3">
+        <div class="cell small-6 medium-3">
             <div class="card collection-1" style="background-image: url('./images/Bitmap4.png');height: 250px;
             position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
 
@@ -120,63 +115,74 @@
         </div>
     </div>
     <div class="grid-x row">
-        <div class="medium-3">
-            <div class="card collection-1" style="background-image: url('./images/Bitmap5.png');height: 250px;
-            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+        <div class="small-6 medium-3">
+            <div class="card collection-1" style="background-image: url('./images/Bitmap5.png');height: 250px;margin: 10px;">
 
             </div>
         </div>
-        <div class="medium-3">
-            <div class="card collection-1" style="background-image: url('./images/Bitmap6.png');height: 250px;
-            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+        <div class="small-6 medium-3">
+            <div class="card collection-1" style="background-image: url('./images/Bitmap6.png');height: 250px;margin: 10px;">
 
             </div>
         </div>
-        <div class="medium-3">
-            <div class="card collection-1" style="background-image: url('./images/Bitmap7.png');height: 250px;
-            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+        <div class="small-6 medium-3">
+            <div class="card collection-1" style="background-image: url('./images/Bitmap7.png');height: 250px;margin: 10px;">
 
             </div>
         </div>
-        <div class="medium-3">
+        <div class="small-6 medium-3">
             <div class="card collection-1" style="background-image: url('./images/Bitmap8.png');height: 250px;
             position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
 
             </div>
         </div>
     </div>
-<div>
-    <button class="button">View All Products</button>
-</div>
+    <div>
+        <button class="button">View All Products</button>
+    </div>
 
 </section>
 
 <section class="services">
-<div class="gird-x row">
-    <div class="medium-8">
-        <div class="card collection-1" style="background-image: url('./images/Bitmap8.png');height: 450px;
-            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
+    <div class="grid-x">
 
+        <div class="medium-offset-1 small-12 medium-6">
+            <div class="card collection-1" style="background-image: url('./images/card.png');height: 600px;margin: 10px;">
+
+            </div>
+        </div>
+        <div class="small-12 medium-4">
+            <div class="grid-x">
+                <div class="card collection-1" style="background-image: url('./images/Bitmap9.png');height: 290px;margin: 10px;">
+
+                </div>
+            </div>
+            <div class="grid-x">
+                <div class="card collection-1" style="background-image: url('./images/Bitmap10.png');height: 290px;margin: 10px;">
+
+                </div>
+            </div>
         </div>
     </div>
-    <div class="medium-4">
-        <div class="card collection-1" style="background-image: url('./images/Bitmap8.png');height: 250px;
-            position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
 
+    <div class="grid-x">
+        <div class="responsive">
+            <div class="medium-3"><img src="{{asset('./images/Bitmap.jpg')}}" alt=""></div>
+            <div class="medium-3"><img src="{{asset('./images/Bitmap.jpg')}}" alt=""></div>
+            <div class="medium-3"><img src="{{asset('./images/Bitmap.jpg')}}" alt=""></div>
+            <div class="medium-3"><img src="{{asset('./images/Bitmap.jpg')}}" alt=""></div>
         </div>
     </div>
-</div>
-
 </section>
 
 
 <section class="our-partners">
-<div class="grid-x">
-    <div class="card collection-1" style="background-image: url('./images/partners.jpg');height: 250px;
+    <div class="grid-x">
+        <div class="card collection-1" style="background-image: url('./images/partners.jpg');height: 250px;
             position: relative;background-repeat: no-repeat;background-size: cover;background-position: center;margin: 10px;">
 
+        </div>
     </div>
-</div>
 
 </section>
 
@@ -205,6 +211,43 @@
             arrows: true,
             autoplaySpeed: 2000,
         });
+
+        $('.responsive').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
     });
 
 </script>
