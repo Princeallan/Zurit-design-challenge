@@ -8454,10 +8454,104 @@ a.thumbnail image {
   }
 }
 
+body {
+  font-family: "Proxima Nova";
+}
+
+body .header .header-content {
+  height: 80px;
+  border-bottom: 1px solid #cccccc;
+}
+
+body .header .header-content .menu-top {
+  list-style: none;
+}
+
+body .header .header-content .menu-top .main-logo {
+  width: 150px !important;
+  margin-left: 40%;
+  margin-top: 50px;
+}
+
+body .header .header-content .menu-top .registration {
+  float: right;
+  font-size: 16px;
+  color: #ccc;
+  margin-left: 20px;
+}
+
+body .header .header-content .menu-top .registration a {
+  color: #cccccc;
+}
+
+body .header .top-bar {
+  background-color: white;
+  height: 80px;
+}
+
+body .header .top-bar ul {
+  background-color: white;
+}
+
+body .header .top-bar ul a {
+  color: #222222;
+}
+
 body .bitmap {
-  margin: 10px;
+  margin-left: 10px;
   height: 500px;
   background-image: url("/images/Bitmap.png");
+}
+
+body .new-products {
+  margin-bottom: 30px;
+}
+
+body .new-products .bitmap1 {
+  height: 250px;
+  margin-bottom: 0;
+}
+
+body .new-products .bitmap1 .card-section {
+  padding: 0;
+}
+
+body .new-products .overlay {
+  border-bottom: 1px solid white;
+  display: none;
+  text-align: center;
+  background: #c88036;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+}
+
+body .new-products .bitmap1:hover .overlay {
+  display: block;
+  opacity: 0.6;
+}
+
+body .new-products .bitmap2 {
+  height: 250px;
+  margin-left: 15px;
+  margin-bottom: 0;
+}
+
+body .new-products .hollow-button {
+  text-align: center;
+}
+
+body .new-products .hollow-button .hollow {
+  border: 1px solid #c36e14;
+  padding: 10px 50px;
+  margin-top: 15px;
+}
+
+body .new-products .second {
+  margin-top: 40px;
 }
 
 body .collection-1 {
