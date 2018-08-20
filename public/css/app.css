@@ -8822,8 +8822,9 @@ body .new-collection {
 
 body .new-collection .bitmap {
   margin-right: 15px;
-  height: 500px;
-  background-image: url("/images/Bitmap.png");
+  height: 600px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("/images/Bitmap.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/Bitmap.png");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8836,7 +8837,7 @@ body .new-collection .bitmap {
 }
 
 body .new-collection .bit-side {
-  height: 242px;
+  height: 292px;
 }
 
 body .new-products {
@@ -8949,6 +8950,10 @@ body .services .large-card .services-content .bold-service-text {
   padding-top: 20px;
 }
 
+body .services .img {
+  padding-left: 15px;
+}
+
 body .news-letter .newsletter-grid {
   background-color: #c36e14 !important;
   height: 200px;
@@ -8959,6 +8964,9 @@ body .news-letter .newsletter-grid {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body .news-letter .newsletter-grid p {

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 <body>
-
+<div class="container">
 <section class="header">
     <div class="row">
         <div class="header-content">
@@ -17,7 +17,7 @@
                 <li class="registration">
                     <a href="#" id="signin">Sign in</a>
                     or
-                    <a href="#" id="join">Join | </a>
+                    <a href="#" id="join"> Join | </a>
                 </li>
             </ul>
         </div>
@@ -95,7 +95,7 @@
         <div class="small-12 medium-6">
             <div class="grid-x">
                 <div class="card collection-1 bit-side"
-                     style="background-image: url('./images/rice.png');">
+                     style="background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('./images/rice.png');">
                     <div class="card-text">
                         <span class="in-text"> Sanitary </span><br>
                         <span class="bold-text">Bathtubs</span>
@@ -105,7 +105,7 @@
             <div class="grid-x">
                 <div class="small-6 medium-7">
                     <div class="card collection-1 bit-side"
-                         style="background-image: url('./images/tiles.png');">
+                         style="background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('./images/tiles.png');">
                         <div class="card-text">
                             <span class="in-text" style=""> Tiles </span><br>
                             <span class="bold-text">Ceramic Tiles</span>
@@ -114,9 +114,9 @@
                 </div>
                 <div class="small-6 medium-5">
                     <div class="card collection-1 bit-side"
-                         style="background-image: url('./images/door.png');">
+                         style="background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('./images/door.png');">
                         <div class="card-text">
-                            <span class="in-text" style=""> Door </span><br>
+                            <span class="in-text" > Door </span><br>
                             <span class="bold-text">Flush Door</span>
                         </div>
                     </div>
@@ -268,11 +268,13 @@
 
             <h4><strong>MORE PRODUCTS</strong></h4>
             <div class="grid-x">
-                <div class="more-products">
-                    <div class="medium-3 collection-1"><img src="{{asset('./images/Bitmap.jpg')}}" alt=""></div>
-                    <div class="medium-3 collection-1"><img src="{{asset('./images/Bitmap.jpg')}}" alt=""></div>
-                    <div class="medium-3 collection-1"><img src="{{asset('./images/Bitmap.jpg')}}" alt=""></div>
-                    <div class="medium-3 collection-1"><img src="{{asset('./images/Bitmap.jpg')}}" alt=""></div>
+                <div class="more-product medium-12 columns">
+                    <div class="small-12 medium-3 "><img class="img" src="{{asset('./images/Bitmap.jpg')}}" alt=""></div>
+                    <div class="small-12 medium-3 "><img class="img" src="{{asset('./images/Bitmap.jpg')}}" alt=""></div>
+                    <div class="small-12 medium-3 "><img class="img" src="{{asset('./images/Bitmap.jpg')}}" alt=""></div>
+                    <div class="small-12 medium-3 "><img class="img" src="{{asset('./images/Bitmap.jpg')}}" alt=""></div>
+                    <div class="small-12 medium-3 "><img class="img" src="{{asset('./images/Bitmap.jpg')}}" alt=""></div>
+                    <div class="small-12 medium-3 "><img class="img" src="{{asset('./images/Bitmap.jpg')}}" alt=""></div>
                 </div>
             </div>
         </div>
@@ -280,13 +282,9 @@
 </section>
 
 
-<section class="our-partners">
-    <div class="grid-x">
-        <div class="card collection-1"
-             style="background-image: url('./images/partners.jpg');height: 250px;margin-right: 15px;">
+<section class="our-partners grid-x collection-1"
+         style="background-image: url('./images/partners.jpg');height: 250px;margin-right: 15px;">
 
-        </div>
-    </div>
 
 </section>
 
@@ -294,12 +292,18 @@
 <section class="news-letter">
     <div class="grid-x newsletter-grid">
         <div class="medium-4 small-12">
-            <h3><strong>Join our newsletter</strong></h3>
+            <h3 style="display: flex;
+      justify-content: center;
+      align-items: center;"><strong>Join our newsletter</strong></h3>
         </div>
         <div class="medium-4 small-12">
             <p>Enter your email and we will keep you <br> posted on news and updates!</p>
         </div>
         <div class="medium-4 small-12">
+            <form action="#">
+                <input type="text" placeholder="Your Email" style="background-color: transparent;margin: 0;height: 60px;border-color: white;color: white;width: 350px;">
+                <input type="text" placeholder="Choose your Country" style="background-color: transparent;margin: 0;height: 60px;border-color: white;color: white;width: 250px;">
+            </form>
 
         </div>
     </div>
@@ -364,7 +368,7 @@
 
 {{--<script src="{{asset('node_modules/what-input/dist/what-input.js')}}"></script>--}}
 
-
+</div>
 <script>
     $(document).foundation();
 
@@ -372,44 +376,31 @@
         $('.home-carousel').slick({
             autoplay: true,
             arrows: true,
-            autoplaySpeed: 2000,
+            autoplaySpeed: 3000,
         });
 
     });
 
-    $('.more-products').slick({
-        dots: true,
-        infinite: false,
-        speed: 300,
+    $('.more-product').slick({
+        autoplay:true,
+        infinite: true,
+        speed: 1000,
         slidesToShow: 4,
         slidesToScroll: 3,
 
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
+        // responsive: [
+        //     {
+        //         breakpoint: 1024,
+                // settings: {
+                //     slidesToShow: 3,
+                //     slidesToScroll: 3,
+                //     infinite: true,
+                //     dots: true,
+                //     arrows:true
+                // }
+            // }
 
-        ]
+        // ]
     });
 
 </script>

@@ -42,6 +42,7 @@ body {
       ul {
         background-color: white;
         text-align: center;
+
         a {
           color: #222222;
         }
@@ -81,15 +82,15 @@ body {
 
     .bitmap {
       margin-right: 15px;
-      height: 500px;
-      background-image: url('/images/Bitmap.png');
+      height: 600px;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('/images/Bitmap.png');
       display: flex;
       justify-content: center;
       align-items: center;
 
     }
     .bit-side {
-      height: 242px;
+      height: 292px;
     }
   }
 
@@ -184,6 +185,9 @@ body {
         }
       }
     }
+    .img {
+      padding-left: 15px;
+    }
   }
 
   .news-letter {
@@ -194,6 +198,7 @@ body {
       color: white;
       display: flex;
       align-items: center;
+      justify-content: center;
 
       p {
         font-size: 20px;
