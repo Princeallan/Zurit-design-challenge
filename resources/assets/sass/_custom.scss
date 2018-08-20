@@ -1,6 +1,11 @@
 body {
   font-family: "Proxima Nova";
 
+  .heading {
+    margin-left: 110px;
+    padding-top: 40px;
+  }
+
   .header {
 
     .header-content {
@@ -21,21 +26,23 @@ body {
           color: #ccc;
           margin-left: 20px;
 
-          a{
+          a {
             color: #cccccc;
           }
         }
       }
     }
 
-    .top-bar{
+    .top-bar {
       background-color: white;
       height: 80px;
+      display: flex;
+      justify-content: center;
 
-      ul{
+      ul {
         background-color: white;
-
-        a{
+        text-align: center;
+        a {
           color: #222222;
         }
       }
@@ -43,10 +50,47 @@ body {
 
   }
 
-  .bitmap {
-    margin-left: 10px;
-    height: 500px;
-    background-image: url('/images/Bitmap.png');
+  .main-slider {
+    opacity: 0.8;
+
+    .carousel-size {
+      height: 450px;
+      color: #ffffff;
+
+      .carousel-content {
+        margin-top: 10%;
+        font-size: 100%;
+        text-align: center;
+
+        p {
+          margin-top: 170px;
+          font-size: 60px;
+          font-weight: bold;
+        }
+        small {
+          font-family: 'Times New Roman';
+          font-size: 26px;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .new-collection {
+    background-color: #e0e0e0;
+
+    .bitmap {
+      margin-right: 15px;
+      height: 500px;
+      background-image: url('/images/Bitmap.png');
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .bit-side {
+      height: 242px;
+    }
   }
 
   .new-products {
@@ -55,32 +99,50 @@ body {
     .bitmap1 {
       height: 250px;
       margin-bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       .card-section {
         padding: 0;
       }
     }
+
     .overlay {
       border-bottom: 1px solid white;
       display: none;
-      text-align: center;
-      background: #c88036;
+      background: #c36e14;
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
       color: white;
+
+      .overlay-text {
+        font-size: 18px;
+        font-family: 'Times New Roman';
+        border-bottom: 1px #ffffff solid;
+      }
     }
     .bitmap1:hover .overlay {
-      display: block;
-      opacity: 0.6;
+      opacity: 0.7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
     }
 
     .bitmap2 {
       height: 250px;
       margin-left: 15px;
       margin-bottom: 0;
+    }
+    .bitmap2:hover .overlay {
+      opacity: 0.6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .hollow-button {
@@ -96,16 +158,79 @@ body {
     .second {
       margin-top: 40px;
     }
+  }
 
-    .news-letter {
+  .services {
 
+    .large-card {
+      height: 500px;
+      margin-right: 15px;
 
+      .services-content {
+        top: 40%;
+        left: 10%;
+        width: 250px;
+        height: 230px;
+        background-color: #ffffff;
+        position: absolute;
+        margin-right: 15px;
+
+        .subheader {
+          margin: 30px;
+        }
+        .bold-service-text {
+          margin: 30px;
+          padding-top: 20px
+        }
+      }
     }
+  }
 
-    .main-footer{
+  .news-letter {
 
+    .newsletter-grid {
+      background-color: #c36e14 !important;
+      height: 200px;
+      color: white;
+      display: flex;
+      align-items: center;
+
+      p {
+        font-size: 20px;
+      }
     }
+  }
 
+  .main-footer {
+
+    .main-grid {
+      background-color: #222222;
+      color: white;
+
+      .grid-offset {
+        margin-top: 80px;
+        margin-bottom: 50px;
+
+        .sub-grid {
+          list-style: none;
+          font-weight: bold;
+          margin-bottom: 50px;
+
+          .medium-2 {
+            margin-right: 20px;
+          }
+          a {
+            font-weight: 400;
+            color: white;
+          }
+        }
+      }
+
+      .copyright-text {
+        text-align: center;
+        color: grey;
+      }
+    }
   }
 
   .collection-1 {
@@ -113,6 +238,25 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .card-text {
+    color: white;
+
+    .in-text {
+      font-family: 'Times New Roman';
+      font-size: 20px;
+      border-bottom: 1px solid white;
+      font-weight: 500;
+    }
+
+    .bold-text {
+      font-size: 20px;
+      font-weight: bolder
+    }
   }
 
 }

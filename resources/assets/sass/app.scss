@@ -3,8 +3,12 @@
 
 // Foundation
 @import "../../../node_modules/foundation-sites/scss/foundation";
+@import "../../../node_modules/slick-carousel/slick/slick";
+@import "../../../node_modules/slick-carousel/slick/slick-theme.scss";
+
 
 // Include Everything (True) for the Flex Grid :);
 @include foundation-everything(true);
 
 @import "custom";
+@import "sliders";
