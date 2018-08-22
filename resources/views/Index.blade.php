@@ -236,7 +236,7 @@
 
     </section>
 
-    <section class="services" style="background-color: #f4f4f4;">
+    <section class="services">
         <div class="grid-x ">
             <div class="small-12 medium-offset-1 medium-10">
                 <div class="grid-x" style="margin-top: 100px;">
@@ -273,46 +273,52 @@
                     </div>
                 </div>
 
-                <h4 style="margin-top: 50px;"><strong>MORE PRODUCTS</strong></h4>
-                <div class="grid-x" style="margin-bottom: 80px;">
+                <h4 class="more-products-top"><strong>MORE PRODUCTS</strong></h4>
+                <div class="grid-x services-bottom">
                     <div class="more-product medium-12 columns">
                         <div style="padding:2%;">
-                            <div class="collection-1" style="height:300px;background-image: URL('{{asset('./images/Bitmap11.jpg')}}')">
+                            <div class="collection-1"
+                                 style="height:300px;background-image: URL('{{asset('./images/Bitmap11.jpg')}}')">
 
                             </div>
                         </div>
                         <div style="padding:2%;">
-                            <div class="collection-1" style="height:300px;background-image: URL('{{asset('./images/Bitmap12.jpg')}}')">
+                            <div class="collection-1"
+                                 style="height:300px;background-image: URL('{{asset('./images/Bitmap12.jpg')}}')">
 
                             </div>
                         </div>
                         <div style="padding:2%;">
-                            <div class="collection-1" style="height:300px;background-image: URL('{{asset('./images/Bitmap13.jpg')}}')">
+                            <div class="collection-1"
+                                 style="height:300px;background-image: URL('{{asset('./images/Bitmap13.jpg')}}')">
 
                             </div>
                         </div>
                         <div style="padding:2%;">
-                            <div class="collection-1" style="height:300px;background-image: URL('{{asset('./images/Bitmap14.jpg')}}')">
+                            <div class="collection-1"
+                                 style="height:300px;background-image: URL('{{asset('./images/Bitmap14.jpg')}}')">
 
                             </div>
                         </div>
                         <div style="padding:2%;">
-                            <div class="collection-1" style="height:300px;background-image: URL('{{asset('./images/Bitmap12.jpg')}}')">
+                            <div class="collection-1"
+                                 style="height:300px;background-image: URL('{{asset('./images/Bitmap12.jpg')}}')">
 
                             </div>
                         </div>
                         <div style="padding:2%;">
-                            <div class="collection-1" style="height:300px;background-image: URL('{{asset('./images/Bitmap14.jpg')}}')">
+                            <div class="collection-1"
+                                 style="height:300px;background-image: URL('{{asset('./images/Bitmap14.jpg')}}')">
 
                             </div>
                         </div>
                     </div>
                     <div class="medium-12 columns">
-                    <div class="paginator">
-                        <ul>
-                            <li class="prev slider-arrow"><i class="fa fa-angle-right"></i></li>
-                        </ul>
-                    </div>
+                        <div class="paginator">
+                            <ul>
+                                <li class="prev slider-arrow"><i class="fa fa-angle-right"></i></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="paginator">
                         <ul>
@@ -325,8 +331,7 @@
     </section>
 
 
-    <section class="our-partners grid-x collection-1"
-             style="background-image: url('./images/partners.jpg');height: 250px;margin-right: 15px;">
+    <section class="our-partners grid-x collection-1" style="background-image: url('./images/partners.jpg');">
 
 
     </section>
@@ -335,9 +340,7 @@
     <section class="news-letter">
         <div class="grid-x newsletter-grid">
             <div class="medium-4 small-12">
-                <h3 style="display: flex;
-      justify-content: center;
-      align-items: center;"><strong>Join our newsletter</strong></h3>
+                <h3 class="join"><strong>Join our newsletter</strong></h3>
             </div>
             <div class="medium-4 small-12">
                 <p>Enter your email and we will keep you <br> posted on news and updates!</p>
@@ -346,18 +349,13 @@
                 <form action="#">
                     <div class="grid-x">
                         <div class="medium-9 columns">
-                            <input type="text" placeholder="Your Email"
-                                   style="background-color: transparent;margin: 0;height: 60px;border-color: white;color: white;width: 100%;font-family: 'Times New Roman';font-size: 16px;">
-
+                            <input type="text" class="email-input" placeholder="Your Email">
                         </div>
                         <div class="medium-7 columns">
-                            <input type="text" placeholder="Choose your Country"
-                                   style="background-color: transparent;margin: 0;height: 60px;border-color: white;color: white;width: 100%;border-top: none;font-family: 'Times New Roman';font-size: 16px;">
+                            <input type="text" placeholder="Choose your Country" class="email-input">
                         </div>
                         <div class="medium-2 columns">
-                            <button style="border: 1px solid white;height: 60px;width: 100%;color: white;font-family: 'Times New Roman';">
-                                Send
-                            </button>
+                            <button class="send-button"> Send</button>
                         </div>
                     </div>
                 </form>
@@ -371,7 +369,7 @@
             <div class="medium-offset-1 small-12 medium-10 grid-offset">
                 <div class="grid-x sub-grid">
 
-                    <div class="small-12 medium-2">
+                    <div class="small-12 medium-3">
                         <h6 class="subheader"><strong>Contact</strong></h6>
                         <p><strong>
                                 6th floor, the Chancery,
@@ -385,7 +383,7 @@
                         <p><b>Zurit.com/products</b></p>
                     </div>
 
-                    <div class="small-12 medium-2" style=" ">
+                    <div class="small-12 medium-2">
                         <h6 class="subheader"><strong>Products</strong></h6>
                         <li><a href="#">Tiles</a></li>
                         <li><a href="#">Sanitary</a></li>
@@ -415,6 +413,12 @@
                         <li><a href="#">Catalogue</a></li>
                         <li><a href="#">Bronchure</a></li>
                     </div>
+                    <div class="small-6 medium-3">
+                        <a href="#" class="button"
+                                style="height:60px;width: 60px;background-color: transparent;border-color: white;float:right;"><i
+                                    class="fa fa-angle-up">Up</i></a>
+                    </div>
+
                 </div>
                 <div class="copyright-text"><p>&copy; 2018 Zurit by Cytonn LLP</p></div>
             </div>
@@ -450,13 +454,13 @@
         responsive: [
             {
                 breakpoint: 1024,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            arrows:true
-        }
-        }
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    arrows: true
+                }
+            }
         ]
     });
 

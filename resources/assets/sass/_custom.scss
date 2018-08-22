@@ -24,9 +24,8 @@ body {
           font-size: 20px;
           color: #cccccc;
           position: absolute;
-          top:60px;
-          right:100px;
-
+          top: 60px;
+          right: 100px;
 
           a {
             color: #cccccc;
@@ -57,7 +56,7 @@ body {
   .main-slider {
 
     .carousel-size {
-      height: 450px;
+      height: 500px;
       color: #ffffff;
 
       .carousel-content {
@@ -85,7 +84,7 @@ body {
     .bitmap {
       margin-right: 15px;
       height: 600px;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('/images/Bitmap.png');
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/Bitmap.png');
       display: flex;
       justify-content: center;
       align-items: center;
@@ -164,6 +163,7 @@ body {
   }
 
   .services {
+    background-color: #f4f4f4;
 
     .large-card {
       height: 500px;
@@ -187,20 +187,59 @@ body {
         }
       }
     }
+
+    .more-products-top{
+      margin-top: 50px
+    }
+
+    .services-bottom{
+      margin-bottom: 50px;
+    }
+
     .img {
       padding-left: 15px;
     }
+  }
+
+  .our-partners {
+    height: 250px;
+    margin-right: 15px;
   }
 
   .news-letter {
 
     .newsletter-grid {
       background-color: #c36e14 !important;
-      height: 200px;
+      height: 250px;
       color: white;
       display: flex;
       align-items: center;
       justify-content: center;
+
+      .join {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .email-input {
+        background-color: transparent;
+        margin: 0;
+        height: 60px;
+        border-color: white;
+        color: white;
+        width: 100%;
+        font-family: 'Times New Roman';
+        font-size: 16px;
+      }
+
+      .send-button {
+        border: 1px solid white;
+        height: 60px;
+        width: 100%;
+        color: white;
+        font-family: 'Times New Roman';
+      }
 
       p {
         font-size: 20px;
@@ -223,9 +262,9 @@ body {
           font-weight: bold;
           margin-bottom: 50px;
 
-          .medium-2 {
-            margin-right: 20px;
-          }
+          //.medium-2 {
+          //  margin-right: 20px;
+          //}
           a {
             font-weight: 400;
             color: white;
