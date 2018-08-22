@@ -1,10 +1,15 @@
 // Settings
 @import "settings";
 
+//font-awesome
+
+
+
 // Foundation
 @import "../../../node_modules/foundation-sites/scss/foundation";
 @import "../../../node_modules/slick-carousel/slick/slick";
 @import "../../../node_modules/slick-carousel/slick/slick-theme.scss";
+@import "../../../node_modules/font-awesome/scss/font-awesome.scss";
 
 
 // Include Everything (True) for the Flex Grid :);
@@ -12,3 +17,4 @@
 
 @import "custom";
 @import "sliders";
+@import "slickpaginator";

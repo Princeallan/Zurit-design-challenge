@@ -15,9 +15,9 @@
                 <ul class="menu-top">
                     <li class="main-logo"><img src="{{asset('./images/zurit-logo.png')}}" alt=""></li>
                     <li class="registration">
-                        <a href="#" id="signin">Sign in</a>
+                        <a href="#" id="signin">sign in</a>
                         or
-                        <a href="#" id="join"> Join | </a>
+                        <a href="#" id="join"> Join </a><span> | <i class="fa fa-search"></i></span>
                     </li>
                 </ul>
             </div>
@@ -77,9 +77,15 @@
                 </div>
             </div>
         </div>
+        <div class="carousel-paginator">
+            <ul>
+                <li class="next carousel-arrows"><i class="fa fa-angle-right"></i></li>
+                <li class="prev carousel-arrows"><i class="fa fa-angle-left"></i></li>
+            </ul>
+        </div>
     </section>
 
-    <section class="new-collection" style="">
+    <section class="new-collection">
         <h4 class="heading"><strong>NEW COLLECTION</strong></h4>
         <div class="grid-x">
             <div class="medium-offset-1 small-12 medium-4">
@@ -270,18 +276,48 @@
                 <h4 style="margin-top: 50px;"><strong>MORE PRODUCTS</strong></h4>
                 <div class="grid-x" style="margin-bottom: 80px;">
                     <div class="more-product medium-12 columns">
-                        <div class="small-12 medium-3 "><img class="img" src="{{asset('./images/Bitmap.jpg')}}" alt="">
+                        <div style="padding:2%;">
+                            <div class="collection-1" style="height:300px;background-image: URL('{{asset('./images/Bitmap11.jpg')}}')">
+
+                            </div>
                         </div>
-                        <div class="small-12 medium-3 "><img class="img" src="{{asset('./images/Bitmap.jpg')}}" alt="">
+                        <div style="padding:2%;">
+                            <div class="collection-1" style="height:300px;background-image: URL('{{asset('./images/Bitmap12.jpg')}}')">
+
+                            </div>
                         </div>
-                        <div class="small-12 medium-3 "><img class="img" src="{{asset('./images/Bitmap.jpg')}}" alt="">
+                        <div style="padding:2%;">
+                            <div class="collection-1" style="height:300px;background-image: URL('{{asset('./images/Bitmap13.jpg')}}')">
+
+                            </div>
                         </div>
-                        <div class="small-12 medium-3 "><img class="img" src="{{asset('./images/Bitmap.jpg')}}" alt="">
+                        <div style="padding:2%;">
+                            <div class="collection-1" style="height:300px;background-image: URL('{{asset('./images/Bitmap14.jpg')}}')">
+
+                            </div>
                         </div>
-                        <div class="small-12 medium-3 "><img class="img" src="{{asset('./images/Bitmap.jpg')}}" alt="">
+                        <div style="padding:2%;">
+                            <div class="collection-1" style="height:300px;background-image: URL('{{asset('./images/Bitmap12.jpg')}}')">
+
+                            </div>
                         </div>
-                        <div class="small-12 medium-3 "><img class="img" src="{{asset('./images/Bitmap.jpg')}}" alt="">
+                        <div style="padding:2%;">
+                            <div class="collection-1" style="height:300px;background-image: URL('{{asset('./images/Bitmap14.jpg')}}')">
+
+                            </div>
                         </div>
+                    </div>
+                    <div class="medium-12 columns">
+                    <div class="paginator">
+                        <ul>
+                            <li class="prev slider-arrow"><i class="fa fa-angle-right"></i></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="paginator">
+                        <ul>
+                            <li class="next slider-arrow"><i class="fa fa-angle-left"></i></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -308,13 +344,22 @@
             </div>
             <div class="medium-4 small-12">
                 <form action="#">
-                    <input type="text" placeholder="Your Email"
-                           style="background-color: transparent;margin: 0;height: 60px;border-color: white;color: white;width: 350px;font-family: 'Times New Roman';font-size: 16px;">
-                    <input type="text" placeholder="Choose your Country"
-                           style="background-color: transparent;margin: 0;height: 60px;border-color: white;color: white;width: 250px;border-top: none;font-family: 'Times New Roman';font-size: 16px;">
-                    <button style="border: 1px solid white;height: 60px;width: 100px;color: white;font-family: 'Times New Roman';">
-                        Send
-                    </button>
+                    <div class="grid-x">
+                        <div class="medium-9 columns">
+                            <input type="text" placeholder="Your Email"
+                                   style="background-color: transparent;margin: 0;height: 60px;border-color: white;color: white;width: 100%;font-family: 'Times New Roman';font-size: 16px;">
+
+                        </div>
+                        <div class="medium-7 columns">
+                            <input type="text" placeholder="Choose your Country"
+                                   style="background-color: transparent;margin: 0;height: 60px;border-color: white;color: white;width: 100%;border-top: none;font-family: 'Times New Roman';font-size: 16px;">
+                        </div>
+                        <div class="medium-2 columns">
+                            <button style="border: 1px solid white;height: 60px;width: 100%;color: white;font-family: 'Times New Roman';">
+                                Send
+                            </button>
+                        </div>
+                    </div>
                 </form>
 
             </div>
@@ -378,8 +423,6 @@
 
     <script src="{{asset('js/app.js')}}"></script>
 
-    {{--<script src="{{asset('node_modules/what-input/dist/what-input.js')}}"></script>--}}
-
 </div>
 <script>
     $(document).foundation();
@@ -387,8 +430,10 @@
     $(document).ready(function () {
         $('.home-carousel').slick({
             autoplay: true,
-            arrows: true,
+            // arrows: false,
             autoplaySpeed: 3000,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next'),
         });
 
     });
@@ -399,20 +444,20 @@
         speed: 1000,
         slidesToShow: 4,
         slidesToScroll: 3,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
 
-        // responsive: [
-        //     {
-        //         breakpoint: 1024,
-        // settings: {
-        //     slidesToShow: 3,
-        //     slidesToScroll: 3,
-        //     infinite: true,
-        //     dots: true,
-        //     arrows:true
-        // }
-        // }
-
-        // ]
+        responsive: [
+            {
+                breakpoint: 1024,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            arrows:true
+        }
+        }
+        ]
     });
 
 </script>

@@ -16,15 +16,17 @@ body {
         list-style: none;
 
         .main-logo {
-          width: 150px !important;
+          width: 180px !important;
           margin-left: 40%;
           margin-top: 50px;
         }
         .registration {
-          float: right;
-          font-size: 16px;
-          color: #ccc;
-          margin-left: 20px;
+          font-size: 20px;
+          color: #cccccc;
+          position: absolute;
+          top:60px;
+          right:100px;
+
 
           a {
             color: #cccccc;
@@ -44,6 +46,7 @@ body {
         text-align: center;
 
         a {
+          padding: 25px;
           color: #222222;
         }
       }
@@ -52,7 +55,6 @@ body {
   }
 
   .main-slider {
-    opacity: 0.8;
 
     .carousel-size {
       height: 450px;
